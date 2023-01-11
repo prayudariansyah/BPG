@@ -1,7 +1,10 @@
 body{
     margin: 0;
     font-family: 'Poppins';    
-    overflow:visible;
+    overflow:scroll;
+}  
+body::-webkit-scrollbar{
+  display: none;
 }
 
 header {
@@ -104,36 +107,48 @@ header {
   }
    .about{
     margin-top: 100px;
-    padding-left: 345px;
-    padding-right: 370px;
+  }
+
+  .deskripsi-about{
+    margin-left: 340px;
+    margin-right: 340px;
   }
   .brands{
     margin-top: 80px;
   }
 
-  .list-brands{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-
-    position: absolute;
-    height: 220px;
-    left: 0px;
-    overflow-x: scroll;
-  }
   
   .list-card{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     margin-top: 30px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 40px;
-    width: 1440px;
-    overflow-x: scroll;
+    width:3000px;
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 35s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: left;
+    -webkit-animation-timing-function: linear;
+    /* overflow-x: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;   */
   }
+  .list-card:hover{
+    -webkit-animation-play-state: paused;
+  }
+  @-webkit-keyframes move {
+    0% {
+      margin-left: 100px;
+    }
+    100% {
+      margin-left: -5500px;
+    }
+  } 
+  /* .list-card::-webkit-scrollbar{
+    display: none;
+  } */
 
   .card{
     display: flex;
@@ -146,10 +161,12 @@ header {
     border-radius: 10px;
   }
 
+  .title-card {
+    width: 351px;
+    text-align: center;
+  }
   .title-card p{
     margin-top: 15px;
-    margin-left: 133px;
-    margin-right: 134px;
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -166,6 +183,7 @@ header {
   }
 
   .left-logo{
+    margin-top: -15px;
     width: 150px;
     height: 150px;
   }
@@ -178,17 +196,71 @@ header {
     width: 149px;
     height: 144px;
     margin-left: 22px;
-    margin-top: 6px;
+    margin-top: -40px;
   }
   .produk p{
     height: 18px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 30px;
     color: #BFBFBF;
   }
   
   .costumers{
     margin-top: 80px;
+  }
+  .list-costumers{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 40px;
+  }
+  .costumer img{
+    width: 200px;
+    height: 160px;
+  }
+
+  .choose{
+    margin-top: 100px;
+  }
+  .list-keunggulan{
+    justify-content: center;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 300px;
+    row-gap: 50px;
+  }
+  .keunggulan{
+    display: flex;
+    flex-direction: row;
+    height: 97px;
+  }
+  .keunggulan img{    
+    width: 90px;
+    height: 90px;
+    left: 0px;
+    top: 7px;
+  }
+  .deskripsi{
+    text-align: start;
+    width: 357px;
+    margin-left: 16px;
+  }
+  .cepat{
+  margin-top: -8px;
+  left: 106px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2C2C2C;
+  }
+  .deskripsi-keunggulan{
+    margin-top: -15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2C2C2C;
   }
