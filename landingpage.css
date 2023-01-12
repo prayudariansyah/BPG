@@ -124,19 +124,19 @@ header {
     margin-left: auto;
     margin-right: auto;
     gap: 40px;    
-    -webkit-animation-name: move;
-    -webkit-animation-duration: 35s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: left;
-    -webkit-animation-timing-function: linear;
+    animation-name: move;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-direction: left;
+    animation-timing-function: linear;
     /* overflow-x: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none;   */
   }
   .list-card:hover{
-    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
   }
-  @-webkit-keyframes move {
+  @keyframes move {
     0% {
       margin-left: 100px;
     }
