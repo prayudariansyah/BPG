@@ -94,6 +94,7 @@ body::-webkit-scrollbar{
     height: 200px;
   }
   .deskripsi-produk{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
