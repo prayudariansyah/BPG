@@ -8,7 +8,6 @@ body::-webkit-scrollbar{
 }
 
 header {
-      
     padding: 20px 100px 0px;
     height: 740px;
     background-image: url("/images/icons/Background.png");
@@ -124,8 +123,7 @@ header {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    gap: 40px;
-    width:3000px;
+    gap: 40px;    
     -webkit-animation-name: move;
     -webkit-animation-duration: 35s;
     -webkit-animation-iteration-count: infinite;
@@ -263,4 +261,101 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #2C2C2C;
+  }
+
+  footer{
+    margin-top: 80px;
+    height: 359px;
+    bottom: 0px;
+    background-color: #FFB800;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 200px;
+    /* justify-content: center; */
+  }
+  .left-footer{
+    width: 314px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  .logo-footer img{
+    width: 81px;
+    height: 80px;
+  }
+  .deskripsi-logo{
+    margin-top: -10px;
+  }
+  .sosmed{
+    display: flex;
+    flex-direction: row;
+  }
+  .sosmed img{
+    width: 40px;
+    height: 40px;
+  }
+  .center-footer{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C2C;
+  }
+  .navigation-footer{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navigation-footer a{
+    color: #2C2C2C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .navigation-footer .active{
+    color: white;
+  }
+  .right-footer{
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2C2C2C;
+  }
+  .info-address{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 355px;
+    gap: 14px;
+  }
+  .info-address a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #2C2C2C;
+  }
+  .call{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .call img{
+    width: 24px;
+    height: 24px;
+  }
+  .email{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+  .email img{
+    width: 24px;
+    height: 24px;
   }
