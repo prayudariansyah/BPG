@@ -6,15 +6,27 @@ h1{
     color: #FFB800;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #FFB800;
+  height: 50%;
+  
+}
 body{
-    
+    max-width: 3000px; 
     margin: 0;
     font-family: 'Poppins';    
-    overflow:scroll;
+    overflow-y: visible;
 }  
-body::-webkit-scrollbar{
+/* body::-webkit-scrollbar{
   display: none;
-}
+} */
 
 .navigation{
     display: flex;
@@ -62,18 +74,43 @@ body::-webkit-scrollbar{
   }
   .brand{
     margin-top: 40px;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+color: #2C2C2C;
   }
   
 
-  
+  .list-products::-webkit-scrollbar {
+    width: 10px;
+  }
+  .list-products::-webkit-scrollbar-track {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e4e4e4;
+    border-radius: 10px;
+  }
+  .list-products::-webkit-scrollbar-thumb {
+    background-color: #FFB800;
+    border-radius: 10px;
+  }
   .list-products{   
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     gap: 40px;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
   }
+  
+
   .products{
     width: 285px;
     height: 400px;
@@ -94,6 +131,7 @@ body::-webkit-scrollbar{
     height: 200px;
   }
   .deskripsi-produk{
+    padding-left: 10px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

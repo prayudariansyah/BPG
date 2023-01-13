@@ -1,7 +1,8 @@
 body{
     margin: 0;
+    max-width: 3000px;
     font-family: 'Poppins';    
-    overflow:scroll;
+    overflow:auto;
 }  
 body::-webkit-scrollbar{
   display: none;
@@ -125,10 +126,11 @@ header {
     margin-right: auto;
     gap: 40px;    
     animation-name: move;
-    animation-duration: 35s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-direction: left;
     animation-timing-function: linear;
+    overflow: hidden;
     /* overflow-x: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none;   */
