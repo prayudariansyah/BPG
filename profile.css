@@ -8,24 +8,42 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-header {
-    padding: 20px 100px 0px;
+header {    
     height: 740px;
-    background-image: url("/images/icons/Background.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url("images/icons/backgournd/Background.png");
+    transition-property: background-image;
+    transition-duration: 1s; */
+    animation: example 10s infinite;
+    background-image: url("/images/icons/backgournd/Background.png");
   }
+  @keyframes example{
+    0% {background-image: url("/images/icons/backgournd/Background.png");}
+    50% {background-image: url("/images/icons/backgournd/Background2.png");}    
+    100% {background-image: url("/images/icons/backgournd/Background3.png");}
+  
+  }
+/* header:hover{
+  background-image: url("images/icons/backgournd/Background2.png");
+} */
   
   header .logo {
-    flex-grow: 1;
-
+    flex-grow: 1; 
+  }
+  header .logo img{
+    height: 80px;
   }
   .navigation{
+    position: sticky;
+    top: 0;
+    padding: 10px 100px; 
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;    
+    background-image: url("/images/icons/backgound-navigation.png");    
   }
   
   header nav {
+    padding-top: 18px;
     text-align: right;
     flex-grow: 1;
   }
@@ -45,7 +63,7 @@ header {
     text-decoration: none;
     font-style: normal;
     font-size: 14px;
-    color: white;
+    color: #2C2C2C;
     font-weight: 500;
   }
   header nav ul li :hover {
@@ -55,13 +73,13 @@ header {
     color: #AA7101;
   }
 
-  .jumbotron {
+  .jumbotron {    
     display: flex;
     margin-top: 158px;
     margin-left: 106px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 169px;
+    margin-bottom: 169px;    
   }
   
    .jumbo1 {
@@ -106,17 +124,55 @@ header {
     color: #2C2C2C;
   }
    .about{
-    margin-top: 100px;
+    margin-top: 120px;
   }
 
   .deskripsi-about{
-    margin-left: 340px;
-    margin-right: 340px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .visi-misi{
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 3000px;
+    justify-content: center;    
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+  .visi{
+    width: 500px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .misi{
+    font-weight: 500;
+    font-size: 18px;
+    width: 500px;
+  }
+  .visi p{
+    margin-top: -10px;
+  }
+  .misi p{
+    margin-top: -10px;
   }
   .brands{
-    margin-top: 80px;
+    margin-top: 120px;  
   }
 
+  .text-brand{      
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+  }
+  .view-all{
+    font-weight: 600;
+    font-size: 16px;
+    color: #AA7101;
+    position: absolute;
+    right: 100px;    
+  }
   
   .list-card{
     display: flex;
@@ -208,9 +264,10 @@ header {
   }
   
   .costumers{
-    margin-top: 80px;
+    margin-top: 120px;
   }
   .list-costumers{
+    margin-top: -30px;
     display:grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 40px;
@@ -221,11 +278,13 @@ header {
   }
 
   .choose{
-    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 120px;
   }
   .list-keunggulan{
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 300px;
@@ -266,7 +325,7 @@ header {
   }
 
   footer{
-    margin-top: 80px;
+    margin-top: 150px;
     height: 359px;
     bottom: 0px;
     background-color: #FFB800;
@@ -280,8 +339,7 @@ header {
     margin-left: 100px;
     margin-top: 30px;
   }
-  .logo-footer img{
-    width: 81px;
+  .logo-footer img{    
     height: 80px;
   }
   .deskripsi-logo{

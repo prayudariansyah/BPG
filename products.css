@@ -3,7 +3,7 @@ h1{
     font-weight: 600;
     font-size: 42px;
     line-height: 63px;
-    color: #FFB800;
+    color: #EFC31A;
 }
 
 body::-webkit-scrollbar {
@@ -14,7 +14,7 @@ body::-webkit-scrollbar-track {
   
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #FFB800;
+  background-color: #EFC31A;
   height: 50%;
   
 }
@@ -27,18 +27,46 @@ body{
 /* body::-webkit-scrollbar{
   display: none;
 } */
-
-.navigation{
-    display: flex;
-    justify-content: space-between; 
+  header{
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
   }
   
-  header{
-    padding: 20px 100px 0px 100px;
-    background-color: #FFB800;
-    position: sticky;
+  .navigation{    
+    padding: 10px 100px; 
+    display: flex;
+    justify-content: space-between;    
+    background-image: url("/images/icons/backgound-navigation.png");    
+  }
+  header .logo img{
+    height: 80px;
   }
   header nav {
+    padding-top: 18px;
+    text-align: right;
+    flex-grow: 1;
+  }
+  
+  header nav ul {
+    text-align: right;
+    display: inline-flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin: 0px 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    color: #2C2C2C;
+    font-weight: 500;
+  }
+  /* header nav {
     text-align: right;
     flex-grow: 1;
   }
@@ -60,7 +88,7 @@ body{
     font-size: 14px;
     color: white;
     font-weight: 500;
-  }
+  } */
   header nav ul li :hover {
     color: #AA7101;
   }
@@ -89,14 +117,14 @@ color: #2C2C2C;
   .list-products::-webkit-scrollbar {
     width: 10px;
   }
-  .list-products::-webkit-scrollbar-track {
+  .list-products::-webkit-scrollbar-track { 
     margin-left: 20px;
     margin-right: 20px;
     background-color: #e4e4e4;
     border-radius: 10px;
   }
   .list-products::-webkit-scrollbar-thumb {
-    background-color: #FFB800;
+    background-color: #EFC31A;
     border-radius: 10px;
   }
   .list-products{   
