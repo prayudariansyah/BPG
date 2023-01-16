@@ -157,26 +157,33 @@ header {
     margin-top: -10px;
   }
   .brands{
-    margin-top: 120px;  
+    margin-top: 120px;      
   }
 
-  .text-brand{      
+  .text-brand{
+    max-width: 3000px;      
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;    
     justify-content: center;    
   }
-  .view-all{
+  .view-all{    
+    text-align: end;
     font-weight: 600;
-    font-size: 16px;
-    color: #AA7101;
+    font-size: 16px;    
     position: absolute;
-    right: 100px;    
+    right: 100px;
+    color: #2C2C2C;          
+  }
+  .view-all:hover{
+    color: #AA7101;
   }
   
   .list-card{
     display: flex;
     flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -213,7 +220,7 @@ header {
     width: 351px;
     height: 220px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.047);
     border-radius: 10px;
   }
 
@@ -247,34 +254,37 @@ header {
     width: 146px;
   }
 
-  .produk{
+  .produk{ 
+    align-items: center;      
     text-align: start;
     width: 149px;
     height: 144px;
     margin-left: 22px;
     margin-top: -40px;
   }
-  .produk p{
+  .produk p{    
     height: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     line-height: 30px;
-    color: #BFBFBF;
+    color: #2c2c2c;
   }
   
   .costumers{
     margin-top: 120px;
   }
   .list-costumers{
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: -30px;
     display:grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 40px;
   }
   .costumer img{
-    width: 200px;
-    height: 160px;
+    width: 150px;
+    height: 120px;
   }
 
   .choose{
@@ -283,11 +293,13 @@ header {
     margin-top: 120px;
   }
   .list-keunggulan{
+    margin-left: 100px;
+    margin-right: 100px;
     justify-content: center;
     margin-top: 80px;
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 300px;
+    column-gap: 200px;
     row-gap: 50px;
   }
   .keunggulan{
@@ -332,7 +344,7 @@ header {
     display: grid;
     grid-template-columns: max-content max-content max-content;
     gap: 200px;
-    /* justify-content: center; */
+    justify-content: start;
   }
   .left-footer{
     width: 314px;
@@ -377,7 +389,7 @@ header {
   .navigation-footer .active{
     color: white;
   }
-  .right-footer{
+  .right-footer{    
     margin-top: 40px;
     font-style: normal;
     font-weight: 500;
@@ -405,8 +417,11 @@ header {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    width: 300px;
+    align-items: center;
   }
   .call img{
+    margin-top: 8px;
     width: 24px;
     height: 24px;
   }
